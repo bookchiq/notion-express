@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 	next();
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 const HOST = "localhost";
 
 // The dotenv library will read from your .env file into these values on `process.env`
